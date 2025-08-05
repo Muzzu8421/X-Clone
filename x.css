@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "TwitterChirp";
+  src: url("/fonts/ChirpRegular.woff") format("woff"),
+    url("/fonts/ChirpRegular.woff") format("woff");
+}
+
+body > {
+  font-family: "TwitterChirp", sans-serif;
+  color: rgb(231, 233, 234);
+}
+
+/* 1) Hide all scrollbars everywhere */
+* {
+  /* Firefox */
+  scrollbar-width: none !important;
+  /* WebKit (Chrome, Safari, Edge) */
+}
+*::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+@import "tailwindcss";
+.border-gray {
+  border-right: 1px solid rgba(47, 51, 54, 255);
+  border-left: 1px solid rgba(47, 51, 54, 255);
+}
